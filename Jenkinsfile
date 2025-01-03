@@ -46,8 +46,7 @@ node{
     }
     
     stage('Pushing it ot the DockerHub'){
-        echo 'Pushing the docker image to DockerHub'
-        {
+        echo 'Pushing the docker image to DockerHub'{
         sh "${dockerCMD} login -u s98singh -p '24ick_[NjWsn~!D'"
         sh "${dockerCMD} push s98singh/insure-me:${tagName}"
             
@@ -60,7 +59,3 @@ node{
         
     }
 }
-
-
-
-
